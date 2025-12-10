@@ -1,0 +1,29 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TrainDataset/USOD10K/Imgs/'
+    gt_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TrainDataset/USOD10K/GT/'
+    dp_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TrainDataset/USOD10K/depth/'
+    trainsize: 352
+
+test_dataset:
+  COD10K:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TestDataset/COD10k/Imgs/'
+      gt_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TestDataset/COD10k/GT/'
+      testsize: 352
+  CAMO:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10K/TestDataset/CAMO/Imgs/'
+      gt_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10K/TestDataset/CAMO/GT/'
+      testsize: 352
+  USOD10K:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TestDataset/USOD10K/Imgs/'
+      gt_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TestDataset/USOD10K/GT/'
+      dp_root: '/root/autodl-tmp/CamoDiffusion-main/media/dataset/COD10k/TestDataset/USOD10K/depth/'
+      testsize: 352
+
